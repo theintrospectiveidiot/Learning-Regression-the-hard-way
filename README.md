@@ -1,4 +1,4 @@
-##Learning Regression the hard way
+## Learning Regression the hard way
 
 This repository was created while experimenting and implementing Regression algorithms from scratch in C using Gradient descent.
 
