@@ -12,7 +12,9 @@ z += C[i]*powf(x,i);
 }
 for(i=0;i<=degree;i++)
 {
-C[i] = C[i] + eta*((y - z)*(powf(x,i)) - lambda*C[i]);
+if(i != 0)
+	C[i] = C[i] + eta*((y - z)*(powf(x,i)) - lambda*C[i]);
+else C[i] = C[i] + eta*(y-z)*powf(x,i);
 }
 printf("y = %f\tz = %f\n",y,z);
 }
